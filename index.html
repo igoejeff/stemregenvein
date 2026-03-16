@@ -64,8 +64,8 @@
         "@type": ["MedicalClinic", "MedicalBusiness", "LocalBusiness"],
         "@id": "https://www.stemregenmedical.com/#organization",
         "name": "Stem Regen Medical",
-        "alternateName": ["Stem Regen Medical", "Stem Regen Medical NY", "Stem Regen Medical NJ"],
-        "description": "Board-certified varicose vein and spider vein specialists serving New York, NY and surrounding areas. Minimally invasive treatments including VENCLOSE RFA, Varithena, Sclerotherapy, and ClariVein. Most insurance accepted.",
+        "alternateName": ["Stem Regen Medical", "Stem Regen Medical NY", "Stem Regen Medical NJ", "Stem Regen Medical New Jersey"],
+        "description": "Board-certified varicose vein and spider vein specialists serving New York (Midtown Manhattan & Brooklyn) and New Jersey. Minimally invasive treatments including VENCLOSE RFA, Varithena, Sclerotherapy, and ClariVein. Most insurance accepted.",
         "url": "https://www.stemregenmedical.com/",
         "logo": {
           "@type": "ImageObject",
@@ -76,14 +76,33 @@
         "image": "https://www.stemregenmedical.com/images/hero-bg.jpg",
         "telephone": "+18777440446",
         "email": "info@stemregenmedical.com",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "7 West 45th Street, Floor 9",
-          "addressLocality": "New York",
-          "addressRegion": "NY",
-          "postalCode": "10036",
-          "addressCountry": "US"
-        },
+        "address": [
+          {
+            "@type": "PostalAddress",
+            "name": "Stem Regen Medical Midtown",
+            "streetAddress": "7 West 45th Street, Floor 9",
+            "addressLocality": "New York",
+            "addressRegion": "NY",
+            "postalCode": "10036",
+            "addressCountry": "US"
+          },
+          {
+            "@type": "PostalAddress",
+            "name": "Stem Regen Medical Brooklyn",
+            "streetAddress": "640 Parkside Avenue, Suite 201",
+            "addressLocality": "Brooklyn",
+            "addressRegion": "NY",
+            "postalCode": "11226",
+            "addressCountry": "US"
+          },
+          {
+            "@type": "PostalAddress",
+            "name": "Stem Regen Medical New Jersey",
+            "addressLocality": "Paramus",
+            "addressRegion": "NJ",
+            "addressCountry": "US"
+          }
+        ],
         "geo": {
           "@type": "GeoCoordinates",
           "latitude": 33.7838,
@@ -248,7 +267,7 @@
             "name": "How do I schedule a free consultation at Stem Regen Medical?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "You can schedule your free consultation by calling 877-744-0446, filling out our online request form at stemregenmedical.com, or visiting our office at 7 West 45th Street, Floor 9, New York, NY 10036. We confirm appointments within one business hour."
+              "text": "You can schedule your free consultation by calling 877-744-0446, filling out our online request form at stemregenmedical.com, or visiting us at 7 West 45th Street, Floor 9, New York, NY 10036 (Midtown) or 640 Parkside Avenue, Suite 201, Brooklyn, NY 11226. We confirm appointments within one business hour."
             }
           },
           {
@@ -296,7 +315,7 @@
   ============================================================ -->
   <div class="topbar">
     <div class="topbar-inner">
-      <span><i class="fas fa-map-marker-alt"></i> 7 West 45th Street, Floor 9 · New York, NY 10036</span>
+      <span><i class="fas fa-map-marker-alt"></i> Midtown, NY &nbsp;·&nbsp; Brooklyn, NY &nbsp;·&nbsp; New Jersey</span>
       <span><i class="fas fa-shield-alt"></i> Most Insurance Plans Accepted</span>
       <a href="tel:8777440446" class="topbar-phone"><i class="fas fa-phone"></i> 877.744.0446</a>
     </div>
@@ -2144,7 +2163,26 @@
         <div class="footer-col footer-contact-col">
           <h4>Contact Us</h4>
           <ul class="footer-contact-list" itemscope itemtype="https://schema.org/MedicalClinic">
-            <li itemprop="address" itemscope itemtype="https://schema.org/PostalAddress"><i class="fas fa-map-marker-alt"></i> <span itemprop="streetAddress">7 West 45th Street, Floor 9</span><br><span style="padding-left:22px" itemprop="addressLocality">New York</span>, <span itemprop="addressRegion">NY</span> <span itemprop="postalCode">10036</span></li>
+            <li><i class="fas fa-map-marker-alt"></i>
+              <span style="display:inline-block;padding-left:4px;">
+                <strong style="color:var(--blue);font-size:0.78rem;text-transform:uppercase;letter-spacing:0.05em;">Midtown</strong><br>
+                7 West 45th Street, Floor 9<br>
+                New York, NY 10036
+              </span>
+            </li>
+            <li><i class="fas fa-map-marker-alt"></i>
+              <span style="display:inline-block;padding-left:4px;">
+                <strong style="color:var(--blue);font-size:0.78rem;text-transform:uppercase;letter-spacing:0.05em;">Brooklyn</strong><br>
+                640 Parkside Avenue, Suite 201<br>
+                Brooklyn, NY 11226
+              </span>
+            </li>
+            <li><i class="fas fa-map-marker-alt"></i>
+              <span style="display:inline-block;padding-left:4px;">
+                <strong style="color:var(--blue);font-size:0.78rem;text-transform:uppercase;letter-spacing:0.05em;">New Jersey</strong><br>
+                Serving Northern &amp; Central NJ
+              </span>
+            </li>
             <li><i class="fas fa-phone"></i> <a href="tel:8777440446" itemprop="telephone">877.744.0446</a></li>
             <li><i class="fas fa-envelope"></i> <a href="mailto:info@stemregenmedical.com" itemprop="email">info@stemregenmedical.com</a></li>
             <li><i class="fas fa-clock"></i> <span itemprop="openingHours" content="Mo-Fr 08:00-17:00">Mon – Fri: 8:00am – 5:00pm</span></li>
@@ -2158,7 +2196,7 @@
 
     <div class="footer-bottom">
       <div class="container footer-bottom-inner">
-        <p>&copy; 2026 Stem Regen Medical | 7 West 45th Street, Floor 9, New York, NY 10036 | <a href="tel:8777440446" style="color:rgba(255,255,255,.5)">877.744.0446</a></p>
+        <p>&copy; 2026 Stem Regen Medical | Midtown, NY &middot; Brooklyn, NY &middot; New Jersey | <a href="tel:8777440446" style="color:rgba(255,255,255,.5)">877.744.0446</a></p>
         <div class="footer-links">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms of Use</a>
