@@ -4,7 +4,7 @@
 **Live Site:** https://www.atlantamedicalclinic.com/  
 **Clinic:** Stem Regen Medical — Board-certified varicose vein & spider vein specialists  
 **Address:** 7 West 45th Street, Floor 9, New York, NY 10036  
-**Phone:** 404-609-0870  
+**Phone:** 877-744-0446  
 **Email:** info@atlantamedicalclinic.com  
 **Hours:** Mon–Fri 8:00am–5:00pm
 
