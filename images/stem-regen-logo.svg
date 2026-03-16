@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 200" fill="none">
+  <!-- DNA double helix strand (center) -->
+  <g transform="translate(230, 10)">
+    <!-- Left strand -->
+    <path d="M30 5 C20 20, 10 35, 20 50 C30 65, 40 80, 30 95 C20 110, 10 125, 20 140 C30 155, 40 170, 30 185" 
+          stroke="rgba(26,37,96,0.7)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <!-- Right strand -->
+    <path d="M30 5 C40 20, 50 35, 40 50 C30 65, 20 80, 30 95 C40 110, 50 125, 40 140 C30 155, 20 170, 30 185" 
+          stroke="rgba(26,37,96,0.7)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <!-- Cross rungs -->
+    <line x1="20" y1="22" x2="40" y2="22" stroke="rgba(26,37,96,0.5)" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="12" y1="38" x2="48" y2="38" stroke="rgba(26,37,96,0.5)" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="15" y1="54" x2="45" y2="54" stroke="rgba(26,37,96,0.5)" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="20" y1="70" x2="40" y2="70" stroke="rgba(26,37,96,0.5)" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="24" y1="86" x2="36" y2="86" stroke="rgba(26,37,96,0.5)" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="20" y1="102" x2="40" y2="102" stroke="rgba(26,37,96,0.5)" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="15" y1="118" x2="45" y2="118" stroke="rgba(26,37,96,0.5)" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="12" y1="134" x2="48" y2="134" stroke="rgba(26,37,96,0.5)" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="18" y1="150" x2="42" y2="150" stroke="rgba(26,37,96,0.5)" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="22" y1="166" x2="38" y2="166" stroke="rgba(26,37,96,0.5)" stroke-width="1.8" stroke-linecap="round"/>
+    <!-- Dots on nodes -->
+    <circle cx="20" cy="22" r="3" fill="rgba(26,37,96,0.65)"/>
+    <circle cx="40" cy="22" r="3" fill="rgba(26,37,96,0.65)"/>
+    <circle cx="12" cy="38" r="3" fill="rgba(26,37,96,0.65)"/>
+    <circle cx="48" cy="38" r="3" fill="rgba(26,37,96,0.65)"/>
+    <circle cx="15" cy="54" r="3" fill="rgba(26,37,96,0.65)"/>
+    <circle cx="45" cy="54" r="3" fill="rgba(26,37,96,0.65)"/>
+    <circle cx="20" cy="70" r="3" fill="rgba(26,37,96,0.65)"/>
+    <circle cx="40" cy="70" r="3" fill="rgba(26,37,96,0.65)"/>
+    <circle cx="24" cy="86" r="3" fill="rgba(26,37,96,0.65)"/>
+    <circle cx="36" cy="86" r="3" fill="rgba(26,37,96,0.65)"/>
+    <circle cx="20" cy="102" r="3" fill="rgba(26,37,96,0.65)"/>
+    <circle cx="40" cy="102" r="3" fill="rgba(26,37,96,0.65)"/>
+    <circle cx="15" cy="118" r="3" fill="rgba(26,37,96,0.65)"/>
+    <circle cx="45" cy="118" r="3" fill="rgba(26,37,96,0.65)"/>
+    <circle cx="12" cy="134" r="3" fill="rgba(26,37,96,0.65)"/>
+    <circle cx="48" cy="134" r="3" fill="rgba(26,37,96,0.65)"/>
+    <circle cx="18" cy="150" r="3" fill="rgba(26,37,96,0.65)"/>
+    <circle cx="42" cy="150" r="3" fill="rgba(26,37,96,0.65)"/>
+    <circle cx="22" cy="166" r="3" fill="rgba(26,37,96,0.65)"/>
+    <circle cx="38" cy="166" r="3" fill="rgba(26,37,96,0.65)"/>
+  </g>
+
+  <!-- STEM (left of DNA) -->
+  <text x="10" y="108" 
+        font-family="Georgia, 'Times New Roman', serif" 
+        font-size="72" 
+        font-weight="400"
+        letter-spacing="6"
+        fill="rgba(26,37,96,0.9)">STEM</text>
+
+  <!-- REGEN (right of DNA) -->
+  <text x="300" y="108" 
+        font-family="Georgia, 'Times New Roman', serif" 
+        font-size="72" 
+        font-weight="400"
+        letter-spacing="6"
+        fill="rgba(26,37,96,0.9)">REGEN</text>
+
+  <!-- MEDICAL (below REGEN, smaller spaced) -->
+  <text x="300" y="145" 
+        font-family="Georgia, 'Times New Roman', serif" 
+        font-size="22" 
+        font-weight="400"
+        letter-spacing="12"
+        fill="rgba(26,37,96,0.6)">MEDICAL</text>
+</svg>

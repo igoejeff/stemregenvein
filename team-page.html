@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/MedicalClinic">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Meet Our Team | Stem Regen Medical – New York, NY</title>
+  <meta name="description" content="Meet the dedicated medical team at Stem Regen Medical. Our board-certified physicians, nurse practitioners, and physical therapists are committed to your recovery and well-being in New York, NY." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Stem Regen Medical" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    /* ── Team Page Styles ── */
+    .team-hero {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%);
+      padding: 80px 0 64px;
+      text-align: center;
+      color: var(--white);
+    }
+    .team-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--white);
+    }
+    .team-hero p {
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.85);
+      max-width: 640px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+    .team-hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 50px;
+      padding: 6px 18px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 18px;
+    }
+    .breadcrumb-bar {
+      background: var(--light-gray);
+      border-bottom: 1px solid var(--mid-gray);
+      padding: 10px 0;
+    }
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.82rem;
+      color: var(--charcoal-muted);
+    }
+    .breadcrumb a { color: var(--blue); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb i { font-size: 0.65rem; }
+    .team-section { padding: 72px 0 40px; }
+    .team-section:nth-child(even) { background: var(--light-gray); }
+    .team-dept-label {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 48px;
+    }
+    .team-dept-label h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      color: var(--navy);
+      margin: 0;
+    }
+    .team-dept-line {
+      flex: 1;
+      height: 2px;
+      background: linear-gradient(to right, var(--gold), transparent);
+    }
+    .team-dept-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 32px;
+    }
+    .team-grid--featured {
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    }
+    .team-card {
+      background: var(--white);
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.28s ease, box-shadow 0.28s ease;
+    }
+    .team-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.13);
+    }
+    .team-card--featured { border: 2px solid var(--gold); }
+    .team-photo-wrap {
+      position: relative;
+      aspect-ratio: 3/4;
+      overflow: hidden;
+      background: #e8edf3;
+    }
+    .team-photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      transition: transform 0.5s ease;
+    }
+    .team-card:hover .team-photo { transform: scale(1.04); }
+    .team-photo-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #dce4ef 0%, #c8d5e6 100%);
+      color: var(--blue);
+      gap: 10px;
+    }
+    .team-photo-placeholder i { font-size: 3.5rem; opacity: 0.45; }
+    .team-photo-placeholder span { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; opacity: 0.45; }
+    .team-featured-badge {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: var(--gold);
+      color: var(--white);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 50px;
+    }
+    .team-card-body {
+      padding: 24px 26px 28px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .team-card-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin: 0 0 4px;
+      line-height: 1.3;
+    }
+    .team-card-title {
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin: 0 0 12px;
+    }
+    .team-card-title--gold { color: var(--gold); }
+    .team-card-divider {
+      width: 36px;
+      height: 3px;
+      background: var(--gold);
+      border-radius: 2px;
+      margin-bottom: 14px;
+    }
+    .team-card-bio {
+      font-size: 0.9rem;
+      line-height: 1.7;
+      color: var(--charcoal-muted);
+      flex: 1;
+    }
+    .team-card-creds {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 16px;
+    }
+    .team-cred-tag {
+      background: var(--light-gray);
+      border: 1px solid var(--mid-gray);
+      color: var(--navy);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      padding: 3px 10px;
+      border-radius: 50px;
+    }
+    .team-card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 18px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--blue);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .team-card-link:hover { color: var(--gold); }
+    .team-cta-strip {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%);
+      padding: 64px 0;
+      text-align: center;
+      color: var(--white);
+    }
+    .team-cta-strip h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      color: var(--white);
+      margin-bottom: 14px;
+    }
+    .team-cta-strip p {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.82);
+      max-width: 520px;
+      margin: 0 auto 28px;
+      line-height: 1.7;
+    }
+    @media (max-width: 768px) {
+      .team-grid, .team-grid--featured { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="topbar-inner">
+      <span><i class="fas fa-map-marker-alt"></i> 7 West 45th Street, Floor 9 · New York, NY 10036</span>
+      <span><i class="fas fa-shield-alt"></i> Most Insurance Plans Accepted</span>
+      <a href="tel:4046090870" class="topbar-phone"><i class="fas fa-phone"></i> 404.609.0870</a>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header" id="site-header" role="banner">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <img src="images/stem-regen-logo.png" alt="Stem Regen Medical" class="logo-img" />
+      </a>
+      <nav class="main-nav" id="main-nav" role="navigation" aria-label="Primary Navigation">
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li class="has-dropdown">
+            <a href="index.html#treatments">Services <i class="fas fa-chevron-down nav-arrow"></i></a>
+            <ul class="nav-dropdown">
+              <li><a href="services/varicose-vein-treatment.html">Varicose Vein Treatment</a></li>
+              <li><a href="services/spider-vein-treatment.html">Spider Vein Treatment</a></li>
+              <li><a href="services/venclose-rfa.html">VENCLOSE&#8482; RFA</a></li>
+              <li><a href="services/varithena.html">Varithena&#174; Microfoam</a></li>
+              <li><a href="services/sclerotherapy.html">Sclerotherapy &amp; ClariVein&#174;</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html#testimonials">Reviews</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="team-page.html" style="color:var(--gold);font-weight:600;">Our Team</a></li>
+          <li><a href="index.html#schedule">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a href="tel:4046090870" class="btn-phone"><i class="fas fa-phone"></i> 404.609.0870</a>
+        <a href="index.html#schedule" class="btn-primary btn-sm">Schedule Consultation</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobile-nav">
+    <div class="mobile-nav-header">
+      <img src="images/stem-regen-logo.png" alt="Stem Regen Medical" class="mobile-nav-logo-img" />
+    </div>
+    <ul>
+      <li><a href="index.html#about" onclick="closeMobileNav()">About</a></li>
+      <li><a href="index.html#treatments" onclick="closeMobileNav()">Services</a></li>
+      <li><a href="services/varicose-vein-treatment.html" onclick="closeMobileNav()" style="padding-left:28px;font-size:0.88rem;color:var(--charcoal-muted)">→ Varicose Vein Treatment</a></li>
+      <li><a href="services/spider-vein-treatment.html" onclick="closeMobileNav()" style="padding-left:28px;font-size:0.88rem;color:var(--charcoal-muted)">→ Spider Vein Treatment</a></li>
+      <li><a href="services/venclose-rfa.html" onclick="closeMobileNav()" style="padding-left:28px;font-size:0.88rem;color:var(--charcoal-muted)">→ VENCLOSE&#8482; RFA</a></li>
+      <li><a href="services/varithena.html" onclick="closeMobileNav()" style="padding-left:28px;font-size:0.88rem;color:var(--charcoal-muted)">→ Varithena&#174; Microfoam</a></li>
+      <li><a href="services/sclerotherapy.html" onclick="closeMobileNav()" style="padding-left:28px;font-size:0.88rem;color:var(--charcoal-muted)">→ Sclerotherapy &amp; ClariVein&#174;</a></li>
+      <li><a href="index.html#testimonials" onclick="closeMobileNav()">Reviews</a></li>
+      <li><a href="blog.html" onclick="closeMobileNav()">Blog</a></li>
+      <li><a href="team-page.html" onclick="closeMobileNav()">Our Team</a></li>
+      <li><a href="index.html#schedule" onclick="closeMobileNav()">Contact</a></li>
+      <li class="mobile-nav-cta"><a href="tel:4046090870"><i class="fas fa-phone"></i> 404.609.0870</a></li>
+      <li class="mobile-nav-cta"><a href="index.html#schedule" class="btn-primary" onclick="closeMobileNav()">Schedule Consultation</a></li>
+    </ul>
+  </div>
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay" onclick="closeMobileNav()"></div>
+
+  <main id="main-content" role="main">
+
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb-bar">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="fas fa-chevron-right"></i>
+          <span>Our Team</span>
+        </nav>
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="team-hero">
+      <div class="container">
+        <div class="team-hero-badge"><i class="fas fa-star"></i> Board-Certified Specialists</div>
+        <h1>Meet Our Dedicated Team</h1>
+        <p>Our physicians, nurse practitioners, physical therapists, and patient coordinators work together to deliver exceptional, compassionate care in New York and New Jersey.</p>
+      </div>
+    </section>
+
+    <!-- ── MEDICAL LEADERSHIP ── -->
+    <section class="team-section" id="leadership">
+      <div class="container">
+        <div class="team-dept-label">
+          <div class="team-dept-icon"><i class="fas fa-user-md"></i></div>
+          <h2>Medical Leadership</h2>
+          <div class="team-dept-line"></div>
+        </div>
+        <div class="team-grid team-grid--featured">
+
+          <!-- Dr. Steven S. Moalemi -->
+          <div class="team-card team-card--featured">
+            <div class="team-photo-wrap">
+              <span class="team-featured-badge">Medical Director</span>
+              <img src="images/team/dr-moalemi-real.webp" alt="Dr. Steven S. Moalemi, MD, FAAPMR" class="team-photo" />
+            </div>
+            <div class="team-card-body">
+              <h3 class="team-card-name">Dr. Steven S. Moalemi</h3>
+              <p class="team-card-title team-card-title--gold">Medical Director</p>
+              <div class="team-card-divider"></div>
+              <p class="team-card-bio">A leading physiatrist and regenerative medicine specialist serving New York and New Jersey, Dr. Moalemi has been board-certified since 1999. As a Fellow of the American Academy of Physical Medicine and Rehabilitation (FAAPMR), he emphasizes personalized treatment plans focused on pain relief and functional recovery. His integrative approach combines the latest regenerative therapies with proven clinical techniques to help patients regain their quality of life.</p>
+              <div class="team-card-creds">
+                <span class="team-cred-tag">MD</span>
+                <span class="team-cred-tag">FAAPMR</span>
+                <span class="team-cred-tag">Board-Certified 1999</span>
+                <span class="team-cred-tag">Physiatrist</span>
+                <span class="team-cred-tag">Regenerative Medicine</span>
+              </div>
+              <a href="https://paramus.stemregenmedical.com/contact/" class="team-card-link" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-calendar-check"></i> Meet Dr. Moalemi
+              </a>
+            </div>
+          </div>
+
+          <!-- Gus A. Dürich -->
+          <div class="team-card">
+            <div class="team-photo-wrap">
+              <span class="team-featured-badge">Clinical Director</span>
+              <img src="images/team/gus-durich-real.webp" alt="Gus A. Dürich – Clinical Director" class="team-photo" />
+            </div>
+            <div class="team-card-body">
+              <h3 class="team-card-name">Gus A. D&#252;rich</h3>
+              <p class="team-card-title">Clinical Director</p>
+              <div class="team-card-divider"></div>
+              <p class="team-card-bio">With over 18 years of experience building and leading multidisciplinary practices, and 13 years specifically in regenerative medicine, Gus leads clinic innovation and drives patient-care excellence at Stem Regen Medical. His vision and operational expertise ensure every patient receives world-class care from the moment they walk through our doors.</p>
+              <div class="team-card-creds">
+                <span class="team-cred-tag">18+ Years Experience</span>
+                <span class="team-cred-tag">Regenerative Medicine</span>
+                <span class="team-cred-tag">Practice Management</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── MEDICAL STAFF ── -->
+    <section class="team-section" id="medical-staff">
+      <div class="container">
+        <div class="team-dept-label">
+          <div class="team-dept-icon"><i class="fas fa-stethoscope"></i></div>
+          <h2>Medical Staff</h2>
+          <div class="team-dept-line"></div>
+        </div>
+        <div class="team-grid">
+
+          <!-- Irene Walker -->
+          <div class="team-card">
+            <div class="team-photo-wrap">
+              <img src="images/team/irene-walker-real.jpg" alt="Irene Walker – APN Sports Medicine" class="team-photo" />
+            </div>
+            <div class="team-card-body">
+              <h3 class="team-card-name">Irene Walker</h3>
+              <p class="team-card-title">APN – Sports Medicine Nurse Practitioner</p>
+              <div class="team-card-divider"></div>
+              <p class="team-card-bio">A Board-Certified Family Nurse Practitioner certified in Prolozone/Ozone Therapy, Irene brings over 16 years of RN experience — with the majority spent in the emergency department. She specializes in the treatment of both chronic and acute pain, and is dedicated to helping injured Federal workers navigate their care and return to optimal health.</p>
+              <div class="team-card-creds">
+                <span class="team-cred-tag">APN</span>
+                <span class="team-cred-tag">FNP-C</span>
+                <span class="team-cred-tag">Prolozone/Ozone Therapy</span>
+                <span class="team-cred-tag">16+ Years RN</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PHYSICAL THERAPY ── -->
+    <section class="team-section" id="physical-therapy">
+      <div class="container">
+        <div class="team-dept-label">
+          <div class="team-dept-icon"><i class="fas fa-running"></i></div>
+          <h2>Physical Therapy</h2>
+          <div class="team-dept-line"></div>
+        </div>
+        <div class="team-grid">
+
+          <!-- Jyoti Malhotra -->
+          <div class="team-card">
+            <div class="team-photo-wrap">
+              <img src="images/team/jyoti-malhotra-real.webp" alt="Jyoti Malhotra – Lead Physical Therapist" class="team-photo" />
+            </div>
+            <div class="team-card-body">
+              <h3 class="team-card-name">Jyoti Malhotra</h3>
+              <p class="team-card-title">Lead Physical Therapist</p>
+              <div class="team-card-divider"></div>
+              <p class="team-card-bio">A movement specialist and physical therapist since 2011, Jyoti holds a BPT from the Institute of Physiotherapy &amp; Rehabilitation Sciences in New Delhi and an MSc in Kinesiology &amp; Exercise Science from Brooklyn College (CUNY). She specializes in orthopedic manual therapy, Mulligan and Maitland techniques, and has advanced training in functional manual therapy from the Institute of Physical Arts.</p>
+              <div class="team-card-creds">
+                <span class="team-cred-tag">BPT</span>
+                <span class="team-cred-tag">MSc Kinesiology</span>
+                <span class="team-cred-tag">Orthopedic Manual Therapy</span>
+                <span class="team-cred-tag">Mulligan &amp; Maitland</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Edmundo Sanglay -->
+          <div class="team-card">
+            <div class="team-photo-wrap">
+              <img src="images/team/edmundo-sanglay-real.png" alt="Edmundo Sanglay – Sports Medicine PT" class="team-photo" />
+            </div>
+            <div class="team-card-body">
+              <h3 class="team-card-name">Edmundo Sanglay, PT</h3>
+              <p class="team-card-title">Sports Medicine Physical Therapist</p>
+              <div class="team-card-divider"></div>
+              <p class="team-card-bio">Known to his patients as "Jun," Edmundo brings 23 years of hands-on experience across orthopedics, neurology, pediatrics, geriatrics, and sports rehabilitation. His diverse clinical background allows him to provide highly individualized care, helping patients of all ages and conditions achieve lasting functional recovery.</p>
+              <div class="team-card-creds">
+                <span class="team-cred-tag">PT</span>
+                <span class="team-cred-tag">23 Years Experience</span>
+                <span class="team-cred-tag">Sports Rehab</span>
+                <span class="team-cred-tag">Orthopedics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mark Takach -->
+          <div class="team-card">
+            <div class="team-photo-wrap">
+              <img src="images/team/mark-takach-real.jpg" alt="Mark Takach – Physical Therapy Assistant" class="team-photo" />
+            </div>
+            <div class="team-card-body">
+              <h3 class="team-card-name">Mark Takach</h3>
+              <p class="team-card-title">Physical Therapy Assistant</p>
+              <div class="team-card-divider"></div>
+              <p class="team-card-bio">Mark joined our team with 30 years of experience in outpatient rehabilitation. He is a certified corrective &amp; performance exercise specialist and owned a successful personal training business. He is passionate about helping our patients get their lives back.</p>
+              <div class="team-card-creds">
+                <span class="team-cred-tag">PTA</span>
+                <span class="team-cred-tag">30 Years Experience</span>
+                <span class="team-cred-tag">Corrective Exercise</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Karen Smith -->
+          <div class="team-card">
+            <div class="team-photo-wrap">
+              <img src="images/team/karen-smith-real.webp" alt="Karen Smith – Physical Therapy Assistant" class="team-photo" />
+            </div>
+            <div class="team-card-body">
+              <h3 class="team-card-name">Karen Smith</h3>
+              <p class="team-card-title">Physical Therapy Assistant</p>
+              <div class="team-card-divider"></div>
+              <p class="team-card-bio">Karen is a Physical Therapy Assistant with over 30 years of experience and a concentration in orthopedic rehab. She enjoys helping her patients reach their full potential and recover their strength and mobility.</p>
+              <div class="team-card-creds">
+                <span class="team-cred-tag">PTA</span>
+                <span class="team-cred-tag">30+ Years</span>
+                <span class="team-cred-tag">Orthopedic Rehab</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ruth Castro -->
+          <div class="team-card">
+            <div class="team-photo-wrap">
+              <img src="images/team/ruth-castro-real.jpg" alt="Ruth Castro – Physical Therapy Assistant" class="team-photo" />
+            </div>
+            <div class="team-card-body">
+              <h3 class="team-card-name">Ruth Castro</h3>
+              <p class="team-card-title">Physical Therapy Assistant</p>
+              <div class="team-card-divider"></div>
+              <p class="team-card-bio">Ruth is a Physical Therapy Assistant with over 25 years of experience in orthopedic, subacute, and geriatrics rehab. She loves helping patients on their journey back to healthy and active lives.</p>
+              <div class="team-card-creds">
+                <span class="team-cred-tag">PTA</span>
+                <span class="team-cred-tag">25+ Years</span>
+                <span class="team-cred-tag">Geriatrics &amp; Ortho</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stanislawa Krol -->
+          <div class="team-card">
+            <div class="team-photo-wrap">
+              <img src="images/team/stanislawa-krol-real.webp" alt="Stanislawa Krol – Physical Therapy Assistant" class="team-photo" />
+            </div>
+            <div class="team-card-body">
+              <h3 class="team-card-name">Stanislawa Krol</h3>
+              <p class="team-card-title">Physical Therapy Assistant</p>
+              <div class="team-card-divider"></div>
+              <p class="team-card-bio">A licensed Physical Therapy Assistant (PTA), Stanislawa earned her Associate of Applied Science from Union County College in 2015. With experience across outpatient, inpatient, rehabilitation, and acute-care settings, she brings a well-rounded clinical perspective and unwavering commitment to compassionate, high-quality patient care.</p>
+              <div class="team-card-creds">
+                <span class="team-cred-tag">PTA Licensed</span>
+                <span class="team-cred-tag">AAS – Union County College</span>
+                <span class="team-cred-tag">Outpatient &amp; Inpatient</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── MASSAGE & WELLNESS ── -->
+    <section class="team-section" id="massage-wellness">
+      <div class="container">
+        <div class="team-dept-label">
+          <div class="team-dept-icon"><i class="fas fa-spa"></i></div>
+          <h2>Massage &amp; Wellness</h2>
+          <div class="team-dept-line"></div>
+        </div>
+        <div class="team-grid">
+
+          <!-- Tracey Barton-Herishen -->
+          <div class="team-card">
+            <div class="team-photo-wrap">
+              <img src="images/team/tracey-barton-real.webp" alt="Tracey Barton-Herishen – Licensed Massage Therapist" class="team-photo" />
+            </div>
+            <div class="team-card-body">
+              <h3 class="team-card-name">Tracey Barton-Herishen</h3>
+              <p class="team-card-title">Licensed Massage Therapist</p>
+              <div class="team-card-divider"></div>
+              <p class="team-card-bio">A graduate of the Helma Institute, Tracey has 20 years of experience in orthopedic massage therapy. Dedicated to helping patients manage chronic pain, she loves making her patients feel better every single session.</p>
+              <div class="team-card-creds">
+                <span class="team-cred-tag">LMT</span>
+                <span class="team-cred-tag">20 Years</span>
+                <span class="team-cred-tag">Orthopedic Massage</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Agnes Gronostajska -->
+          <div class="team-card">
+            <div class="team-photo-wrap">
+              <img src="images/team/agnes-gronostajska.png" alt="Agnes Gronostajska – Massage Therapist" class="team-photo" />
+            </div>
+            <div class="team-card-body">
+              <h3 class="team-card-name">Agnes Gronostajska</h3>
+              <p class="team-card-title">Massage Therapist</p>
+              <div class="team-card-divider"></div>
+              <p class="team-card-bio">Agnes brings 12 years of therapeutic and sports massage expertise to our team. A graduate of the Academy of Massage Therapy, she combines deep tissue, trigger point, and myofascial techniques to relieve pain and restore movement.</p>
+              <div class="team-card-creds">
+                <span class="team-cred-tag">12 Years Experience</span>
+                <span class="team-cred-tag">Sports Massage</span>
+                <span class="team-cred-tag">Deep Tissue</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Heather Viccaro Balestrieri -->
+          <div class="team-card">
+            <div class="team-photo-wrap">
+              <img src="images/team/heather-viccaro.png" alt="Heather Viccaro Balestrieri – Licensed Acupuncturist" class="team-photo" />
+            </div>
+            <div class="team-card-body">
+              <h3 class="team-card-name">Heather Viccaro Balestrieri</h3>
+              <p class="team-card-title">Licensed Acupuncturist</p>
+              <div class="team-card-divider"></div>
+              <p class="team-card-bio">Licensed in both NJ and FL with 20+ years of practice, Heather holds a master's degree in acupuncture. She specializes in cosmetic acupuncture and microneedling, helping patients achieve natural rejuvenation and pain relief through evidence-based Eastern medicine techniques.</p>
+              <div class="team-card-creds">
+                <span class="team-cred-tag">L.Ac.</span>
+                <span class="team-cred-tag">20+ Years</span>
+                <span class="team-cred-tag">Cosmetic Acupuncture</span>
+                <span class="team-cred-tag">Microneedling</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PATIENT CARE COORDINATORS ── -->
+    <section class="team-section" id="patient-care">
+      <div class="container">
+        <div class="team-dept-label">
+          <div class="team-dept-icon"><i class="fas fa-heart"></i></div>
+          <h2>Patient Care Coordinators</h2>
+          <div class="team-dept-line"></div>
+        </div>
+        <div class="team-grid">
+
+          <!-- Kristel Perez -->
+          <div class="team-card">
+            <div class="team-photo-wrap">
+              <img src="images/team/kristel-perez-real.png" alt="Kristel Perez – Patient Care Coordinator" class="team-photo" />
+            </div>
+            <div class="team-card-body">
+              <h3 class="team-card-name">Kristel Perez</h3>
+              <p class="team-card-title">Patient Care Coordinator</p>
+              <div class="team-card-divider"></div>
+              <p class="team-card-bio">With 8 years of experience in healthcare administration — specializing in sports medicine and orthopedics — Kristel is the welcoming face and organizational backbone of our practice. She ensures each patient's journey is seamless, from their first call to their final follow-up.</p>
+              <div class="team-card-creds">
+                <span class="team-cred-tag">8 Years Healthcare Admin</span>
+                <span class="team-cred-tag">Sports Medicine</span>
+                <span class="team-cred-tag">Orthopedics</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="team-cta-strip">
+      <div class="container">
+        <h2>Ready to Meet Our Team in Person?</h2>
+        <p>Schedule a consultation and experience the Stem Regen Medical difference. We're here to listen, evaluate, and build a personalized care plan just for you.</p>
+        <a href="index.html#schedule" class="btn-primary">Schedule a Consultation</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="container footer-top-inner">
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="logo footer-logo">
+            <img src="images/stem-regen-logo.png" alt="Stem Regen Medical" class="logo-img footer-logo-img" />
+          </a>
+          <p>New York's Premier Comprehensive Clinic. Board-certified vein care in the heart of New York since 2003. We're here to help you live free from pain and feel confident in your own skin again.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/stemregenmedical" aria-label="Facebook" rel="noopener noreferrer" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/stemregenmedical" aria-label="Instagram" rel="noopener noreferrer" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://g.co/kgs/stemregenmedical" aria-label="Google" rel="noopener noreferrer" target="_blank"><i class="fab fa-google"></i></a>
+            <a href="https://www.youtube.com/@stemregenmedical" aria-label="YouTube" rel="noopener noreferrer" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="team-page.html">Meet Our Team</a></li>
+            <li><a href="index.html#treatments">Vein Services</a></li>
+            <li><a href="index.html#testimonials">Patient Reviews</a></li>
+            <li><a href="index.html#schedule">Schedule Consultation</a></li>
+            <li><a href="blog.html">Blog &amp; Resources</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="services/varicose-vein-treatment.html">Varicose Vein Treatment</a></li>
+            <li><a href="services/spider-vein-treatment.html">Spider Vein Removal</a></li>
+            <li><a href="services/venclose-rfa.html">VENCLOSE&#8482; RFA</a></li>
+            <li><a href="services/varithena.html">Varithena&#174; Microfoam</a></li>
+            <li><a href="services/sclerotherapy.html">Sclerotherapy</a></li>
+            <li><a href="services/sclerotherapy.html">ClariVein&#174; (MOCA)</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contact-col">
+          <h4>Contact Us</h4>
+          <ul class="footer-contact-list">
+            <li><i class="fas fa-map-marker-alt"></i> 7 West 45th Street, Floor 9<br><span style="padding-left:22px">New York, NY 10036</span></li>
+            <li><i class="fas fa-phone"></i> <a href="tel:4046090870">404.609.0870</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:info@stemregenmedical.com">info@stemregenmedical.com</a></li>
+            <li><i class="fas fa-clock"></i> Mon – Fri: 8:00am – 5:00pm</li>
+            <li><i class="fas fa-clock"></i> Sat – Sun: Closed</li>
+          </ul>
+          <a href="index.html#schedule" class="btn-primary btn-sm footer-cta-btn">Schedule Consultation</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 Stem Regen Medical | 7 West 45th Street, Floor 9, New York, NY 10036 | <a href="tel:4046090870" style="color:rgba(255,255,255,.5)">404.609.0870</a></p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Accessibility</a>
+          <a href="sitemap.xml">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobile-nav');
+    const overlay   = document.getElementById('mobile-nav-overlay');
+    if (hamburger) {
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        mobileNav.classList.toggle('open');
+        if (overlay) overlay.classList.toggle('open');
+        document.body.classList.toggle('nav-open');
+      });
+    }
+    function closeMobileNav() {
+      if (hamburger) hamburger.classList.remove('open');
+      if (mobileNav) mobileNav.classList.remove('open');
+      if (overlay)   overlay.classList.remove('open');
+      document.body.classList.remove('nav-open');
+    }
+    const siteHeader = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      if (siteHeader) siteHeader.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+  </script>
+
+</body>
+</html>

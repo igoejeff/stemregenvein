@@ -1,0 +1,41 @@
+# robots.txt for Atlanta Medical Clinic
+# https://www.atlantamedicalclinic.com/
+
+User-agent: *
+Allow: /
+
+# Allow all major crawlers
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Block access to development/source files
+Disallow: /blog-source.html
+Disallow: /video-frame.json
+Disallow: /video-frame2.json
+
+# Block common bot traps and spam paths
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /cgi-bin/
+Disallow: /*.php$
+Disallow: /xmlrpc.php
+
+# Sitemap location
+Sitemap: https://www.atlantamedicalclinic.com/sitemap.xml

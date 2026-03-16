@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" aria-label="Cigna">
+  <!-- Cigna uses a stylized tree/flower mark then wordmark -->
+  <!-- Simple clean wordmark only — matches brand color #006699 -->
+  <text x="4" y="46" font-family="'Arial', 'Helvetica', sans-serif"
+        font-weight="900" font-size="46" fill="#006699" letter-spacing="-1">cigna</text>
+  <!-- Small dot accent -->
+  <circle cx="183" cy="32" r="4" fill="#009FDA"/>
+</svg>

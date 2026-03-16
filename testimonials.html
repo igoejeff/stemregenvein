@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/MedicalClinic">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patient Testimonials | Stem Regen Medical | New York &amp; New Jersey</title>
+  <meta name="description" content="Hear real patient stories from Stem Regen Medical. Watch video testimonials and read reviews from patients who found relief from knee pain, back pain, neuropathy, and more — serving New York and New Jersey." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://www.stemregenmedical.com/testimonials.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Patient Testimonials | Stem Regen Medical" />
+  <meta property="og:description" content="Real patient stories. Watch video testimonials and read reviews from those who found lasting relief at Stem Regen Medical." />
+  <meta property="og:url" content="https://www.stemregenmedical.com/testimonials.html" />
+  <meta property="og:image" content="https://www.stemregenmedical.com/images/hero-bg.jpg" />
+  <meta name="theme-color" content="#1a2560" />
+
+  <link rel="icon" type="image/png" href="images/stem-regen-logo.png" />
+  <link rel="apple-touch-icon" href="images/stem-regen-logo.png" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    /* ── PAGE-SPECIFIC STYLES ── */
+    .testimonials-hero {
+      background: linear-gradient(135deg, #0b2474 0%, #1a2560 40%, #0d3a6e 100%);
+      padding: 120px 0 80px;
+      text-align: center;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+    .testimonials-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url('images/hero-bg.jpg') center/cover no-repeat;
+      opacity: 0.12;
+    }
+    .testimonials-hero .container { position: relative; }
+    .testimonials-hero .section-tag {
+      background: rgba(216,168,73,.15);
+      color: #d8a849;
+      border: 1px solid rgba(216,168,73,.3);
+      display: inline-block;
+      padding: 6px 18px;
+      border-radius: 50px;
+      font-size: .78rem;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    .testimonials-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1.2;
+      margin-bottom: 18px;
+      color: #fff;
+    }
+    .testimonials-hero h1 em { color: #d8a849; font-style: italic; }
+    .testimonials-hero p {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,.8);
+      max-width: 620px;
+      margin: 0 auto 30px;
+      line-height: 1.7;
+    }
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+    .hero-stat { text-align: center; }
+    .hero-stat-num {
+      display: block;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #d8a849;
+      line-height: 1;
+    }
+    .hero-stat-label { font-size: .8rem; color: rgba(255,255,255,.7); margin-top: 6px; }
+
+    /* ── FILTER TABS ── */
+    .filter-bar {
+      background: #f8f9fc;
+      border-bottom: 1px solid #e8eaf0;
+      padding: 18px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .filter-bar .container {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .filter-btn {
+      background: #fff;
+      border: 1.5px solid #dde1ef;
+      color: #555;
+      padding: 8px 20px;
+      border-radius: 50px;
+      font-size: .85rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all .2s;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: #0b2474;
+      border-color: #0b2474;
+      color: #fff;
+    }
+
+    /* ── SECTION: VIDEO TESTIMONIALS ── */
+    .testimonials-page-section { padding: 70px 0; }
+    .testimonials-page-section.bg-light { background: #f8f9fc; }
+    .section-title-wrap {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .section-title-wrap .section-tag {
+      background: rgba(11,36,116,.07);
+      color: #0b2474;
+      border: 1px solid rgba(11,36,116,.15);
+      display: inline-block;
+      padding: 5px 16px;
+      border-radius: 50px;
+      font-size: .75rem;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .section-title-wrap h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.7rem, 3.5vw, 2.6rem);
+      color: #0b2474;
+      margin-bottom: 14px;
+    }
+    .section-title-wrap h2 em { color: #d8a849; font-style: italic; }
+    .section-title-wrap p {
+      color: #666;
+      max-width: 580px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* ── VIDEO GRID ── */
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 28px;
+    }
+    .video-card {
+      background: #fff;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(11,36,116,.08);
+      transition: transform .25s, box-shadow .25s;
+    }
+    .video-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 36px rgba(11,36,116,.14);
+    }
+    .video-thumb-wrap {
+      position: relative;
+      padding-bottom: 56.25%;
+      background: #0b2474;
+      cursor: pointer;
+    }
+    .video-thumb-wrap iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      opacity: 0;
+      transition: opacity .3s;
+    }
+    .video-thumb-wrap.playing iframe { opacity: 1; }
+    .video-thumb-wrap .thumb-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity .3s;
+    }
+    .video-thumb-wrap.playing .thumb-img,
+    .video-thumb-wrap.playing .play-overlay { opacity: 0; pointer-events: none; }
+    .play-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(11,36,116,.35);
+      transition: background .2s;
+    }
+    .video-thumb-wrap:hover .play-overlay { background: rgba(11,36,116,.5); }
+    .play-btn {
+      width: 60px;
+      height: 60px;
+      background: #d8a849;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.2rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,.3);
+      transition: transform .2s, background .2s;
+    }
+    .video-thumb-wrap:hover .play-btn {
+      transform: scale(1.1);
+      background: #c89838;
+    }
+    .play-btn i { margin-left: 3px; }
+    .video-category-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(216,168,73,.92);
+      color: #fff;
+      font-size: .7rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 50px;
+      letter-spacing: .8px;
+      text-transform: uppercase;
+    }
+    .video-card-body { padding: 18px 20px; }
+    .video-card-title {
+      font-size: .95rem;
+      font-weight: 600;
+      color: #0b2474;
+      line-height: 1.4;
+      margin-bottom: 0;
+    }
+
+    /* ── WRITTEN REVIEWS ── */
+    .written-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .review-card-page {
+      background: #fff;
+      border-radius: 14px;
+      padding: 28px 26px;
+      box-shadow: 0 4px 18px rgba(11,36,116,.07);
+      border-left: 4px solid #d8a849;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      transition: transform .25s, box-shadow .25s;
+    }
+    .review-card-page:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(11,36,116,.12);
+    }
+    .review-card-page.featured {
+      border-left-color: #0b2474;
+      background: linear-gradient(135deg, #f5f7ff, #fff);
+    }
+    .review-stars { color: #f4b942; font-size: 1rem; letter-spacing: 2px; }
+    .review-source-badge {
+      float: right;
+      background: rgba(11,36,116,.07);
+      color: #0b2474;
+      font-size: .7rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 50px;
+    }
+    .review-card-page blockquote {
+      font-size: .93rem;
+      color: #444;
+      line-height: 1.7;
+      font-style: italic;
+      flex: 1;
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+    .review-card-page blockquote::before {
+      content: '\201C';
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      color: #d8a849;
+      line-height: .5;
+      display: block;
+      margin-bottom: 8px;
+    }
+    .review-author-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .review-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #0b2474, #1a4a8c);
+      color: #fff;
+      font-weight: 700;
+      font-size: .85rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .review-avatar.gold { background: linear-gradient(135deg, #d8a849, #c89838); }
+    .review-author-info { font-size: .85rem; }
+    .review-author-info strong { display: block; color: #0b2474; font-weight: 600; }
+    .review-author-info span { color: #888; }
+
+    /* ── CTA BANNER ── */
+    .testimonials-cta {
+      background: linear-gradient(135deg, #0b2474 0%, #1a3d7c 100%);
+      padding: 70px 0;
+      text-align: center;
+      color: #fff;
+    }
+    .testimonials-cta h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      margin-bottom: 14px;
+    }
+    .testimonials-cta h2 em { color: #d8a849; font-style: italic; }
+    .testimonials-cta p {
+      color: rgba(255,255,255,.8);
+      max-width: 520px;
+      margin: 0 auto 30px;
+      line-height: 1.7;
+    }
+    .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .btn-gold {
+      background: #d8a849;
+      color: #fff;
+      border: 2px solid #d8a849;
+      padding: 14px 32px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: .95rem;
+      text-decoration: none;
+      transition: background .2s, transform .2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-gold:hover { background: #c89838; border-color: #c89838; transform: translateY(-2px); }
+    .btn-outline-white {
+      background: transparent;
+      color: #fff;
+      border: 2px solid rgba(255,255,255,.5);
+      padding: 14px 32px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: .95rem;
+      text-decoration: none;
+      transition: border-color .2s, background .2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-outline-white:hover { border-color: #fff; background: rgba(255,255,255,.08); }
+
+    /* ── CATEGORY SECTION HEADERS ── */
+    .category-heading {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+    .category-heading .cat-icon {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, #d8a849, #c89838);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+    .category-heading h3 {
+      font-size: 1.25rem;
+      color: #0b2474;
+      font-weight: 700;
+      margin: 0;
+    }
+    .category-heading span {
+      font-size: .85rem;
+      color: #888;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .hero-stats { gap: 28px; }
+      .video-grid { grid-template-columns: 1fr 1fr; }
+      .written-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 540px) {
+      .video-grid { grid-template-columns: 1fr; }
+      .filter-bar .container { justify-content: flex-start; overflow-x: auto; flex-wrap: nowrap; padding-bottom: 4px; }
+      .filter-btn { white-space: nowrap; flex-shrink: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="topbar-inner">
+      <span><i class="fas fa-map-marker-alt"></i> 7 West 45th Street, Floor 9 · New York, NY 10036</span>
+      <span><i class="fas fa-shield-alt"></i> Most Insurance Plans Accepted</span>
+      <a href="tel:4046090870" class="topbar-phone"><i class="fas fa-phone"></i> 404.609.0870</a>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="site-header" id="site-header" role="banner">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <img src="images/stem-regen-logo.png" alt="Stem Regen Medical" class="logo-img" />
+      </a>
+      <nav class="main-nav" id="main-nav" role="navigation" aria-label="Primary Navigation">
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li class="has-dropdown">
+            <a href="index.html#treatments">Services <i class="fas fa-chevron-down nav-arrow"></i></a>
+            <ul class="nav-dropdown">
+              <li><a href="services/varicose-vein-treatment.html">Varicose Vein Treatment</a></li>
+              <li><a href="services/spider-vein-treatment.html">Spider Vein Treatment</a></li>
+              <li><a href="services/venclose-rfa.html">VENCLOSE&#8482; RFA</a></li>
+              <li><a href="services/varithena.html">Varithena&#174; Microfoam</a></li>
+              <li><a href="services/sclerotherapy.html">Sclerotherapy &amp; ClariVein&#174;</a></li>
+            </ul>
+          </li>
+          <li><a href="testimonials.html" class="active">Reviews</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="index.html#schedule">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a href="tel:4046090870" class="btn-phone"><i class="fas fa-phone"></i> 404.609.0870</a>
+        <a href="index.html#schedule" class="btn-primary btn-sm">Schedule Consultation</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-nav" id="mobile-nav">
+    <div class="mobile-nav-header">
+      <img src="images/stem-regen-logo.png" alt="Stem Regen Medical" class="mobile-nav-logo-img" />
+    </div>
+    <ul>
+      <li><a href="index.html#about" onclick="closeMobileNav()">About</a></li>
+      <li><a href="index.html#treatments" onclick="closeMobileNav()">Services</a></li>
+      <li><a href="services/varicose-vein-treatment.html" onclick="closeMobileNav()" style="padding-left:28px;font-size:0.88rem;color:var(--charcoal-muted)">→ Varicose Vein Treatment</a></li>
+      <li><a href="services/spider-vein-treatment.html" onclick="closeMobileNav()" style="padding-left:28px;font-size:0.88rem;color:var(--charcoal-muted)">→ Spider Vein Treatment</a></li>
+      <li><a href="services/venclose-rfa.html" onclick="closeMobileNav()" style="padding-left:28px;font-size:0.88rem;color:var(--charcoal-muted)">→ VENCLOSE&#8482; RFA</a></li>
+      <li><a href="services/varithena.html" onclick="closeMobileNav()" style="padding-left:28px;font-size:0.88rem;color:var(--charcoal-muted)">→ Varithena&#174; Microfoam</a></li>
+      <li><a href="services/sclerotherapy.html" onclick="closeMobileNav()" style="padding-left:28px;font-size:0.88rem;color:var(--charcoal-muted)">→ Sclerotherapy &amp; ClariVein&#174;</a></li>
+      <li><a href="testimonials.html" onclick="closeMobileNav()">Reviews</a></li>
+      <li><a href="blog.html" onclick="closeMobileNav()">Blog</a></li>
+      <li><a href="index.html#schedule" onclick="closeMobileNav()">Contact</a></li>
+      <li class="mobile-nav-cta"><a href="tel:4046090870"><i class="fas fa-phone"></i> 404.609.0870</a></li>
+      <li class="mobile-nav-cta"><a href="index.html#schedule" class="btn-primary" onclick="closeMobileNav()">Schedule Consultation</a></li>
+    </ul>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ── HERO ── -->
+    <section class="testimonials-hero">
+      <div class="container">
+        <div class="section-tag">Real Patient Stories</div>
+        <h1>What Our Patients<br><em>Are Saying</em></h1>
+        <p>Watch video testimonials and read firsthand accounts from patients who have experienced life-changing results at Stem Regen Medical — serving New York and New Jersey.</p>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-num">⭐⭐⭐⭐⭐</span>
+            <span class="hero-stat-label">Average Patient Rating</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">18+</span>
+            <span class="hero-stat-label">Video Testimonials</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">NY &amp; NJ</span>
+            <span class="hero-stat-label">Serving Two States</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FILTER BAR ── -->
+    <div class="filter-bar" id="filter-bar">
+      <div class="container">
+        <button class="filter-btn active" data-filter="all" onclick="filterVideos(this,'all')">All</button>
+        <button class="filter-btn" data-filter="cellular" onclick="filterVideos(this,'cellular')">Human Cellular Tissue Therapy</button>
+        <button class="filter-btn" data-filter="ortho" onclick="filterVideos(this,'ortho')">Orthopedic Rehabilitation</button>
+        <button class="filter-btn" data-filter="softwave" onclick="filterVideos(this,'softwave')">Softwave Therapy</button>
+        <button class="filter-btn" data-filter="iv" onclick="filterVideos(this,'iv')">IV Infusion Treatments</button>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         SECTION 1 – ALL VIDEO TESTIMONIALS
+    ══════════════════════════════════════════════════ -->
+    <section class="testimonials-page-section" id="video-testimonials">
+      <div class="container">
+        <div class="section-title-wrap">
+          <div class="section-tag">Video Testimonials</div>
+          <h2>Watch Our <em>Patients Speak</em></h2>
+          <p>Real patients, real results. Click any video below to hear their stories directly from our YouTube channel.</p>
+        </div>
+
+        <div class="video-grid" id="video-grid">
+
+          <!-- 1: Former NFL Tight End -->
+          <div class="video-card" data-cat="ortho">
+            <div class="video-thumb-wrap" onclick="playVideo(this,'aNjisNSY-Xw')">
+              <img class="thumb-img" src="https://i.ytimg.com/vi/aNjisNSY-Xw/hqdefault.jpg" alt="Former NFL Tight End testimonial" loading="lazy" />
+              <div class="play-overlay"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+              <div class="video-category-badge">Orthopedic Rehab</div>
+              <iframe data-src="https://www.youtube.com/embed/aNjisNSY-Xw?autoplay=1&controls=1" allow="autoplay; encrypted-media" allowfullscreen title="NFL Tight End testimonial"></iframe>
+            </div>
+            <div class="video-card-body">
+              <p class="video-card-title">Listen To This Former NFL Tight End's Experience at Stem Regen Medical</p>
+            </div>
+          </div>
+
+          <!-- 2: See What This Patient Can Do -->
+          <div class="video-card" data-cat="cellular">
+            <div class="video-thumb-wrap" onclick="playVideo(this,'YfmUMOEpZks')">
+              <img class="thumb-img" src="https://i.ytimg.com/vi/YfmUMOEpZks/hqdefault.jpg" alt="Patient testimonial" loading="lazy" />
+              <div class="play-overlay"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+              <div class="video-category-badge">Cellular Therapy</div>
+              <iframe data-src="https://www.youtube.com/embed/YfmUMOEpZks?autoplay=1&controls=1" allow="autoplay; encrypted-media" allowfullscreen title="Patient testimonial"></iframe>
+            </div>
+            <div class="video-card-body">
+              <p class="video-card-title">See What This Patient Can Do!</p>
+            </div>
+          </div>
+
+          <!-- 3: Female patient treatment -->
+          <div class="video-card" data-cat="cellular">
+            <div class="video-thumb-wrap" onclick="playVideo(this,'_CvGjf7436U')">
+              <img class="thumb-img" src="https://i.ytimg.com/vi/_CvGjf7436U/hqdefault.jpg" alt="Patient experience" loading="lazy" />
+              <div class="play-overlay"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+              <div class="video-category-badge">Cellular Therapy</div>
+              <iframe data-src="https://www.youtube.com/embed/_CvGjf7436U?autoplay=1&controls=1" allow="autoplay; encrypted-media" allowfullscreen title="Patient experience"></iframe>
+            </div>
+            <div class="video-card-body">
+              <p class="video-card-title">Listen To What This Patient Has To Say About Her Treatment!</p>
+            </div>
+          </div>
+
+          <!-- 4: Patient experience -->
+          <div class="video-card" data-cat="cellular">
+            <div class="video-thumb-wrap" onclick="playVideo(this,'gaHrmhm-2tM')">
+              <img class="thumb-img" src="https://i.ytimg.com/vi/gaHrmhm-2tM/hqdefault.jpg" alt="Patient experience" loading="lazy" />
+              <div class="play-overlay"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+              <div class="video-category-badge">Cellular Therapy</div>
+              <iframe data-src="https://www.youtube.com/embed/gaHrmhm-2tM?autoplay=1&controls=1" allow="autoplay; encrypted-media" allowfullscreen title="Patient experience"></iframe>
+            </div>
+            <div class="video-card-body">
+              <p class="video-card-title">Learn About This Patient's Experience!</p>
+            </div>
+          </div>
+
+          <!-- 5: After treatment -->
+          <div class="video-card" data-cat="cellular">
+            <div class="video-thumb-wrap" onclick="playVideo(this,'DJUg4OWkqBc')">
+              <img class="thumb-img" src="https://i.ytimg.com/vi/DJUg4OWkqBc/hqdefault.jpg" alt="After treatment" loading="lazy" />
+              <div class="play-overlay"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+              <div class="video-category-badge">Cellular Therapy</div>
+              <iframe data-src="https://www.youtube.com/embed/DJUg4OWkqBc?autoplay=1&controls=1" allow="autoplay; encrypted-media" allowfullscreen title="After treatment testimonial"></iframe>
+            </div>
+            <div class="video-card-body">
+              <p class="video-card-title">See What This Patient Can Do After Treatment!</p>
+            </div>
+          </div>
+
+          <!-- 6: Listen to experience -->
+          <div class="video-card" data-cat="cellular">
+            <div class="video-thumb-wrap" onclick="playVideo(this,'jCDW54j67t4')">
+              <img class="thumb-img" src="https://i.ytimg.com/vi/jCDW54j67t4/hqdefault.jpg" alt="Patient experience" loading="lazy" />
+              <div class="play-overlay"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+              <div class="video-category-badge">Cellular Therapy</div>
+              <iframe data-src="https://www.youtube.com/embed/jCDW54j67t4?autoplay=1&controls=1" allow="autoplay; encrypted-media" allowfullscreen title="Patient experience"></iframe>
+            </div>
+            <div class="video-card-body">
+              <p class="video-card-title">Listen To This Patient's Experience!</p>
+            </div>
+          </div>
+
+          <!-- 7: Skeptical patient -->
+          <div class="video-card" data-cat="cellular">
+            <div class="video-thumb-wrap" onclick="playVideo(this,'UAD1-jIhqsM')">
+              <img class="thumb-img" src="https://i.ytimg.com/vi/UAD1-jIhqsM/hqdefault.jpg" alt="Skeptical patient testimonial" loading="lazy" />
+              <div class="play-overlay"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+              <div class="video-category-badge">Cellular Therapy</div>
+              <iframe data-src="https://www.youtube.com/embed/UAD1-jIhqsM?autoplay=1&controls=1" allow="autoplay; encrypted-media" allowfullscreen title="Skeptical patient"></iframe>
+            </div>
+            <div class="video-card-body">
+              <p class="video-card-title">This Patient Was Skeptical At First...</p>
+            </div>
+          </div>
+
+          <!-- 8: Athlete neck pain -->
+          <div class="video-card" data-cat="ortho">
+            <div class="video-thumb-wrap" onclick="playVideo(this,'hL5W9f0e0hA')">
+              <img class="thumb-img" src="https://i.ytimg.com/vi/hL5W9f0e0hA/hqdefault.jpg" alt="Athlete neck pain relief" loading="lazy" />
+              <div class="play-overlay"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+              <div class="video-category-badge">Orthopedic Rehab</div>
+              <iframe data-src="https://www.youtube.com/embed/hL5W9f0e0hA?autoplay=1&controls=1" allow="autoplay; encrypted-media" allowfullscreen title="Athlete neck pain"></iframe>
+            </div>
+            <div class="video-card-body">
+              <p class="video-card-title">Listen To How This Athlete Relieved Her Neck Pain</p>
+            </div>
+          </div>
+
+          <!-- 9: Touching story -->
+          <div class="video-card" data-cat="cellular">
+            <div class="video-thumb-wrap" onclick="playVideo(this,'om6z_d25lnk')">
+              <img class="thumb-img" src="https://i.ytimg.com/vi/om6z_d25lnk/hqdefault.jpg" alt="Touching patient story" loading="lazy" />
+              <div class="play-overlay"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+              <div class="video-category-badge">Cellular Therapy</div>
+              <iframe data-src="https://www.youtube.com/embed/om6z_d25lnk?autoplay=1&controls=1" allow="autoplay; encrypted-media" allowfullscreen title="Touching story"></iframe>
+            </div>
+            <div class="video-card-body">
+              <p class="video-card-title">Listen To This Patient's Touching Story</p>
+            </div>
+          </div>
+
+          <!-- 10: Feels after treatment -->
+          <div class="video-card" data-cat="cellular">
+            <div class="video-thumb-wrap" onclick="playVideo(this,'bRrmVeZ6hP0')">
+              <img class="thumb-img" src="https://i.ytimg.com/vi/bRrmVeZ6hP0/hqdefault.jpg" alt="Patient feels after treatment" loading="lazy" />
+              <div class="play-overlay"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+              <div class="video-category-badge">Cellular Therapy</div>
+              <iframe data-src="https://www.youtube.com/embed/bRrmVeZ6hP0?autoplay=1&controls=1" allow="autoplay; encrypted-media" allowfullscreen title="Patient after treatment"></iframe>
+            </div>
+            <div class="video-card-body">
+              <p class="video-card-title">Listen How This Patient Feels After Treatment!</p>
+            </div>
+          </div>
+
+          <!-- 11: Changed client life -->
+          <div class="video-card" data-cat="cellular">
+            <div class="video-thumb-wrap" onclick="playVideo(this,'JmfA3mljA4s')">
+              <img class="thumb-img" src="https://i.ytimg.com/vi/JmfA3mljA4s/hqdefault.jpg" alt="Changed life" loading="lazy" />
+              <div class="play-overlay"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+              <div class="video-category-badge">Cellular Therapy</div>
+              <iframe data-src="https://www.youtube.com/embed/JmfA3mljA4s?autoplay=1&controls=1" allow="autoplay; encrypted-media" allowfullscreen title="Changed life"></iframe>
+            </div>
+            <div class="video-card-body">
+              <p class="video-card-title">Listen How Treatment Has Changed This Client's Life!</p>
+            </div>
+          </div>
+
+          <!-- 12: Amazing testimonial -->
+          <div class="video-card" data-cat="cellular">
+            <div class="video-thumb-wrap" onclick="playVideo(this,'BZvJKJwLwRU')">
+              <img class="thumb-img" src="https://i.ytimg.com/vi/BZvJKJwLwRU/hqdefault.jpg" alt="Amazing testimonial" loading="lazy" />
+              <div class="play-overlay"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+              <div class="video-category-badge">Cellular Therapy</div>
+              <iframe data-src="https://www.youtube.com/embed/BZvJKJwLwRU?autoplay=1&controls=1" allow="autoplay; encrypted-media" allowfullscreen title="Amazing testimonial"></iframe>
+            </div>
+            <div class="video-card-body">
+              <p class="video-card-title">Listen To This Patient's Amazing Testimonial!</p>
+            </div>
+          </div>
+
+          <!-- 13: Janette knee pain -->
+          <div class="video-card" data-cat="cellular">
+            <div class="video-thumb-wrap" onclick="playVideo(this,'sZKbPVl-Avs')">
+              <img class="thumb-img" src="https://i.ytimg.com/vi/sZKbPVl-Avs/hqdefault.jpg" alt="Janette knee pain" loading="lazy" />
+              <div class="play-overlay"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+              <div class="video-category-badge">Cellular Therapy</div>
+              <iframe data-src="https://www.youtube.com/embed/sZKbPVl-Avs?autoplay=1&controls=1" allow="autoplay; encrypted-media" allowfullscreen title="Janette knee pain"></iframe>
+            </div>
+            <div class="video-card-body">
+              <p class="video-card-title">Listen To How Janette Relieved Her Knee Pain</p>
+            </div>
+          </div>
+
+          <!-- 14: Knee discomfort relief -->
+          <div class="video-card" data-cat="cellular">
+            <div class="video-thumb-wrap" onclick="playVideo(this,'UqGa_hcjXxw')">
+              <img class="thumb-img" src="https://i.ytimg.com/vi/UqGa_hcjXxw/hqdefault.jpg" alt="Knee discomfort relief" loading="lazy" />
+              <div class="play-overlay"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+              <div class="video-category-badge">Cellular Therapy</div>
+              <iframe data-src="https://www.youtube.com/embed/UqGa_hcjXxw?autoplay=1&controls=1" allow="autoplay; encrypted-media" allowfullscreen title="Knee discomfort"></iframe>
+            </div>
+            <div class="video-card-body">
+              <p class="video-card-title">Listen to how this Patient Relieved Discomfort in his Knee</p>
+            </div>
+          </div>
+
+          <!-- 15: Jim's testimonial -->
+          <div class="video-card" data-cat="cellular">
+            <div class="video-thumb-wrap" onclick="playVideo(this,'hmhDfQvjMbg')">
+              <img class="thumb-img" src="https://i.ytimg.com/vi/hmhDfQvjMbg/hqdefault.jpg" alt="Jim testimonial" loading="lazy" />
+              <div class="play-overlay"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+              <div class="video-category-badge">Cellular Therapy</div>
+              <iframe data-src="https://www.youtube.com/embed/hmhDfQvjMbg?autoplay=1&controls=1" allow="autoplay; encrypted-media" allowfullscreen title="Jim testimonial"></iframe>
+            </div>
+            <div class="video-card-body">
+              <p class="video-card-title">Listen To Jim's Testimonial</p>
+            </div>
+          </div>
+
+          <!-- 16: Scott's testimonial - Softwave -->
+          <div class="video-card" data-cat="softwave">
+            <div class="video-thumb-wrap" onclick="playVideo(this,'meo56oKRgEE')">
+              <img class="thumb-img" src="https://i.ytimg.com/vi/meo56oKRgEE/hqdefault.jpg" alt="Scott testimonial" loading="lazy" />
+              <div class="play-overlay"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+              <div class="video-category-badge">Softwave Therapy</div>
+              <iframe data-src="https://www.youtube.com/embed/meo56oKRgEE?autoplay=1&controls=1" allow="autoplay; encrypted-media" allowfullscreen title="Scott testimonial"></iframe>
+            </div>
+            <div class="video-card-body">
+              <p class="video-card-title">Scott's Testimonial – Softwave Therapy</p>
+            </div>
+          </div>
+
+          <!-- 17: Treatment experience -->
+          <div class="video-card" data-cat="cellular">
+            <div class="video-thumb-wrap" onclick="playVideo(this,'vwBiZ1X_1TA')">
+              <img class="thumb-img" src="https://i.ytimg.com/vi/vwBiZ1X_1TA/hqdefault.jpg" alt="Treatment experience" loading="lazy" />
+              <div class="play-overlay"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+              <div class="video-category-badge">Cellular Therapy</div>
+              <iframe data-src="https://www.youtube.com/embed/vwBiZ1X_1TA?autoplay=1&controls=1" allow="autoplay; encrypted-media" allowfullscreen title="Treatment experience"></iframe>
+            </div>
+            <div class="video-card-body">
+              <p class="video-card-title">Listen to this Patient's Experience During Treatment</p>
+            </div>
+          </div>
+
+        </div><!-- /video-grid -->
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SECTION 2 – WRITTEN REVIEWS
+    ══════════════════════════════════════════════════ -->
+    <section class="testimonials-page-section bg-light" id="written-reviews">
+      <div class="container">
+        <div class="section-title-wrap">
+          <div class="section-tag">Written Reviews</div>
+          <h2>More Patient <em>Success Stories</em></h2>
+          <p>These are words from real patients — shared with their permission — about the difference treatment has made in their lives.</p>
+        </div>
+
+        <div class="written-grid">
+
+          <div class="review-card-page featured">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <span class="review-source-badge"><i class="fab fa-google"></i> Google</span>
+            </div>
+            <blockquote>I started suffering with knee pain about a year ago. It was very hard for me to get around and climb stairs. Then I saw Stem Regen Medical's television commercial and decided to check it out. It was wonderful. Everyone was so helpful and nice. I now can climb stairs with no problem. I will recommend this facility to everyone.</blockquote>
+            <div class="review-author-row">
+              <div class="review-avatar gold">SP</div>
+              <div class="review-author-info">
+                <strong>Sophia Poulakos</strong>
+                <span>Knee Pain Patient · New York, NY</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card-page">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <span class="review-source-badge"><i class="fab fa-google"></i> Google</span>
+            </div>
+            <blockquote>I've been suffering with knee pain for about a year. It held me back from working as walking became very difficult. My experience here has been great as I am back on my feet again. This treatment has improved my walking abilities as I can now walk without my walker.</blockquote>
+            <div class="review-author-row">
+              <div class="review-avatar">RB</div>
+              <div class="review-author-info">
+                <strong>Rufus Beasley</strong>
+                <span>Knee Pain Patient · New York, NY</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card-page">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <span class="review-source-badge"><i class="fab fa-google"></i> Google</span>
+            </div>
+            <blockquote>I dealt with pain and suffering with Neuropathy for the better of eight years. From poor sleep to daily discomfort as well as an inability to walk without pain. Now with the wonderful and friendly staff at Stem Regen Medical treating me, I am much more active and pain-free.</blockquote>
+            <div class="review-author-row">
+              <div class="review-avatar">BC</div>
+              <div class="review-author-info">
+                <strong>Bobby C.</strong>
+                <span>Neuropathy Patient · New York, NY</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card-page">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <span class="review-source-badge"><i class="fab fa-google"></i> Google</span>
+            </div>
+            <blockquote>I started suffering with back pains about three years ago. I really was not comfortable or happy about anything. After my doctor referred me here and they put me on a treatment plan, I felt 100% better and was able to do things I was not able to do before. It has been a very satisfying and encouraging experience. I would definitely recommend this facility.</blockquote>
+            <div class="review-author-row">
+              <div class="review-avatar gold">PC</div>
+              <div class="review-author-info">
+                <strong>Pran Chhabra</strong>
+                <span>Back Pain Patient · New York, NY</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card-page">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <span class="review-source-badge"><i class="fab fa-google"></i> Google</span>
+            </div>
+            <blockquote>Prior to undergoing treatment, my condition was really limiting my life activities. I'm very glad I chose to come see the doctors here for treatment. The treatment was excellent and it truly took care of my needs.</blockquote>
+            <div class="review-author-row">
+              <div class="review-avatar">EM</div>
+              <div class="review-author-info">
+                <strong>E. Mitchell</strong>
+                <span>Pain Management Patient · New York, NY</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card-page featured">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <span class="review-source-badge"><i class="fab fa-google"></i> Google</span>
+            </div>
+            <blockquote>The staff made me feel comfortable throughout the entire process. Several months post-treatment and the results are incredible. My legs feel and look so much better. I've been recommending Stem Regen Medical to all my friends.</blockquote>
+            <div class="review-author-row">
+              <div class="review-avatar gold">RM</div>
+              <div class="review-author-info">
+                <strong>Raymond M.</strong>
+                <span>Vein Treatment Patient · New York, NY</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card-page">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <span class="review-source-badge"><i class="fab fa-google"></i> Google</span>
+            </div>
+            <blockquote>I can't believe how different my legs look. The team at Stem Regen Medical truly cares about their patients. I felt listened to, not rushed, and the treatment worked better than I ever expected.</blockquote>
+            <div class="review-author-row">
+              <div class="review-avatar">LV</div>
+              <div class="review-author-info">
+                <strong>Leonida V.</strong>
+                <span>Spider Vein Patient · New York, NY</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card-page">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <span class="review-source-badge"><i class="fas fa-star"></i> Healthgrades</span>
+            </div>
+            <blockquote>I was skeptical at first, but the team explained everything so clearly. The treatment process was comfortable and I started feeling results quickly. This is the best decision I made for my health in years.</blockquote>
+            <div class="review-author-row">
+              <div class="review-avatar">MK</div>
+              <div class="review-author-info">
+                <strong>M. Kowalski</strong>
+                <span>Regenerative Medicine Patient · New Jersey</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card-page">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <span class="review-source-badge"><i class="fab fa-google"></i> Google</span>
+            </div>
+            <blockquote>Dr. Moalemi and his entire team are exceptional. They took the time to understand my condition, created a customized plan, and I have experienced remarkable improvement. Walking is no longer painful and I feel like myself again.</blockquote>
+            <div class="review-author-row">
+              <div class="review-avatar gold">JT</div>
+              <div class="review-author-info">
+                <strong>James T.</strong>
+                <span>Physical Therapy Patient · Paramus, NJ</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /written-grid -->
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         CTA SECTION
+    ══════════════════════════════════════════════════ -->
+    <section class="testimonials-cta">
+      <div class="container">
+        <h2>Ready to Write Your Own<br><em>Success Story?</em></h2>
+        <p>Join the hundreds of patients who have found lasting relief at Stem Regen Medical. Start with a free, no-obligation consultation today.</p>
+        <div class="cta-buttons">
+          <a href="index.html#schedule" class="btn-gold"><i class="fas fa-calendar-check"></i> Schedule Free Consultation</a>
+          <a href="tel:4046090870" class="btn-outline-white"><i class="fas fa-phone"></i> Call 404.609.0870</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-main">
+      <div class="container footer-grid">
+
+        <div class="footer-col footer-brand-col">
+          <a href="index.html">
+            <img src="images/stem-regen-logo.png" alt="Stem Regen Medical" class="footer-logo" style="height:110px;object-fit:contain;" />
+          </a>
+          <p class="footer-brand-tagline">Board-certified regenerative medicine &amp; vein specialists serving New York and New Jersey.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/stemregenmedical" aria-label="Facebook" rel="noopener noreferrer" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/stemregenmedical" aria-label="Instagram" rel="noopener noreferrer" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://g.co/kgs/stemregenmedical" aria-label="Google" rel="noopener noreferrer" target="_blank"><i class="fab fa-google"></i></a>
+            <a href="https://www.youtube.com/@stemregenmedical" aria-label="YouTube" rel="noopener noreferrer" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="team-page.html">Meet Our Team</a></li>
+            <li><a href="index.html#treatments">Vein Services</a></li>
+            <li><a href="testimonials.html">Patient Reviews</a></li>
+            <li><a href="index.html#schedule">Schedule Consultation</a></li>
+            <li><a href="blog.html">Blog &amp; Resources</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="services/varicose-vein-treatment.html">Varicose Vein Treatment</a></li>
+            <li><a href="services/spider-vein-treatment.html">Spider Vein Removal</a></li>
+            <li><a href="services/venclose-rfa.html">VENCLOSE&#8482; RFA</a></li>
+            <li><a href="services/varithena.html">Varithena&#174; Microfoam</a></li>
+            <li><a href="services/sclerotherapy.html">Sclerotherapy &amp; ClariVein&#174;</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact-col">
+          <h4>Contact Us</h4>
+          <ul class="footer-contact-list">
+            <li><i class="fas fa-map-marker-alt"></i> 7 West 45th Street, Floor 9<br><span style="padding-left:22px">New York, NY 10036</span></li>
+            <li><i class="fas fa-phone"></i> <a href="tel:4046090870">404.609.0870</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:info@stemregenmedical.com">info@stemregenmedical.com</a></li>
+            <li><i class="fas fa-clock"></i> Mon – Fri: 8:00am – 5:00pm</li>
+          </ul>
+          <a href="index.html#schedule" class="btn-primary btn-sm footer-cta-btn">Schedule Consultation</a>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 Stem Regen Medical | 7 West 45th Street, Floor 9, New York, NY 10036 | <a href="tel:4046090870" style="color:rgba(255,255,255,.5)">404.609.0870</a></p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Accessibility</a>
+          <a href="sitemap.xml">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Phone CTA (mobile) -->
+  <div class="floating-cta" id="floating-cta">
+    <a href="tel:4046090870" class="float-btn float-phone">
+      <i class="fas fa-phone"></i><span>Call Now</span>
+    </a>
+    <a href="index.html#schedule" class="float-btn float-schedule">
+      <i class="fas fa-calendar-check"></i><span>Schedule</span>
+    </a>
+  </div>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+  <script>
+    // ── Play video on click ──
+    function playVideo(wrap, videoId) {
+      if (wrap.classList.contains('playing')) return;
+      wrap.classList.add('playing');
+      const iframe = wrap.querySelector('iframe');
+      iframe.src = iframe.getAttribute('data-src');
+    }
+
+    // ── Category filter ──
+    function filterVideos(btn, filter) {
+      // Update active button
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      // Show/hide cards
+      document.querySelectorAll('#video-grid .video-card').forEach(card => {
+        if (filter === 'all' || card.dataset.cat === filter) {
+          card.style.display = '';
+          card.style.animation = 'fadeInUp .4s ease both';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // ── Hamburger / mobile nav ──
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobile-nav');
+    if (hamburger) {
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        mobileNav.classList.toggle('open');
+        document.body.classList.toggle('nav-open');
+      });
+    }
+    function closeMobileNav() {
+      if (hamburger) hamburger.classList.remove('open');
+      if (mobileNav) mobileNav.classList.remove('open');
+      document.body.classList.remove('nav-open');
+    }
+
+    // ── Sticky header on scroll ──
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      header && header.classList.toggle('scrolled', window.scrollY > 40);
+      const btt = document.getElementById('back-to-top');
+      if (btt) btt.classList.toggle('visible', window.scrollY > 400);
+    });
+
+    // ── Back to top ──
+    const btt = document.getElementById('back-to-top');
+    if (btt) btt.addEventListener('click', () => window.scrollTo({top:0,behavior:'smooth'}));
+  </script>
+</body>
+</html>
