@@ -1135,10 +1135,11 @@ em { font-style: italic; color: var(--blue); }
 }
 .ba-photo-img {
   width: 100%;
-  height: 100%;
+  /* Taller than container so bottom (with logo) overflows and is clipped */
+  height: 140%;
   display: block;
   object-fit: cover;
-  object-position: center;
+  object-position: top center;
   transition: transform 0.5s ease;
 }
 .ba-photo-card:hover .ba-photo-img {
@@ -2739,6 +2740,132 @@ em { font-style: italic; color: var(--blue); }
 .ins-logo--tricare img       { height: 62px; max-width: 175px; }
 
 /* ── FOOTER ── */
+/* ============================================================
+   LOCATIONS MAP SECTION
+============================================================ */
+.locations-section {
+  background: var(--off-white);
+  padding: 80px 0;
+  border-top: 1px solid var(--mid-gray);
+}
+.section-header-center {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.locations-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+.location-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--mid-gray);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: var(--trans);
+}
+.location-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--blue-mid);
+}
+.location-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 24px 24px 16px;
+}
+.location-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--blue-dark), var(--blue-mid));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.location-icon i {
+  color: #fff;
+  font-size: 1rem;
+}
+.location-card-header h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--blue-dark);
+  margin-bottom: 4px;
+}
+.location-address {
+  font-size: 0.88rem;
+  color: var(--text-mid);
+  line-height: 1.5;
+}
+.location-map {
+  width: 100%;
+  overflow: hidden;
+  border-top: 1px solid var(--mid-gray);
+  border-bottom: 1px solid var(--mid-gray);
+}
+.location-map iframe {
+  display: block;
+  width: 100%;
+}
+.location-details {
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+.location-detail-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.88rem;
+  color: var(--text-mid);
+}
+.location-detail-row i {
+  color: var(--blue-mid);
+  width: 16px;
+  text-align: center;
+  flex-shrink: 0;
+}
+.location-detail-row a {
+  color: var(--blue-mid);
+  text-decoration: none;
+  font-weight: 500;
+}
+.location-detail-row a:hover { text-decoration: underline; }
+.location-btn {
+  margin: 0 24px 24px;
+  text-align: center;
+  padding: 11px 20px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 2px solid var(--blue-dark);
+  color: var(--blue-dark);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: var(--trans);
+}
+.location-btn:hover {
+  background: var(--blue-dark);
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .locations-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   FOOTER
+============================================================ */
 .site-footer { background: #ffffff; border-top: 1px solid #e2e6ef; }
 
 .footer-top { padding: 72px 0 48px; }
