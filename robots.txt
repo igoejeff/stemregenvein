@@ -1,21 +1,79 @@
 # robots.txt for Stem Regen Medical
 # https://www.stemregenvein.com/
 
+# ── Google crawlers (explicitly allowed) ──
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Video
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: AdsBot-Google-Mobile
+Allow: /
+
+User-agent: Google-InspectionTool
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+# ── Bing / Microsoft ──
+User-agent: Bingbot
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
+User-agent: msnbot-media
+Allow: /
+
+# ── Other legitimate crawlers ──
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# ── All others ──
 User-agent: *
 Allow: /
 
-# Block archive/source files from being crawled
+# Block archive/source files
 Disallow: /_temp/
 Disallow: /blog-source.html
 Disallow: /video-frame.json
 Disallow: /video-frame2.json
 
-# Block common bot traps and spam paths
+# Block server paths (not applicable to static site but harmless)
 Disallow: /wp-admin/
 Disallow: /wp-includes/
 Disallow: /cgi-bin/
 Disallow: /*.php$
 Disallow: /xmlrpc.php
 
-# Sitemap location
+# Sitemap
 Sitemap: https://www.stemregenvein.com/sitemap.xml

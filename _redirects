@@ -1,0 +1,5 @@
+# Redirect non-www to www
+https://stemregenvein.com/* https://www.stemregenvein.com/:splat 301!
+
+# Ensure clean URLs work
+/index /index.html 200

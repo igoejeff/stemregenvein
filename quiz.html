@@ -14,6 +14,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" href="images/stem-regen-logo.png" />
 
   <title>Am I a Candidate? Vein Treatment Quiz | Stem Regen Medical</title>
   <meta name="description" content="Take our free 2-minute vein health quiz to find out if you may be a candidate for varicose or spider vein treatment at Stem Regen Medical in New York, NY." />
@@ -338,16 +340,85 @@
       <div class="container">
         <div class="quiz-layout">
 
-          <!-- Quiz iframe -->
+          <!-- Vein Health Quiz -->
           <div class="quiz-frame-wrap">
-            <iframe
-              src="https://link.mypracticelaunch.com/widget/survey/BFRAuOhlVuspu0xXnzGt"
-              style="border:none;width:100%;"
-              scrolling="no"
-              id="BFRAuOhlVuspu0xXnzGt"
-              title="Vein Health Assessment Quiz">
-            </iframe>
-            <script src="https://link.mypracticelaunch.com/js/form_embed.js"></script>
+            <form id="vein-quiz-form" class="native-consult-form" novalidate style="background:#fff;padding:32px;border-radius:12px;box-shadow:0 4px 24px rgba(26,37,96,.10);">
+              <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#111840;margin:0 0 6px;">Vein Health Assessment</h3>
+              <p style="font-size:0.88rem;color:#666;margin:0 0 24px;">Answer a few quick questions so our team can prepare your personalized consultation.</p>
+
+              <div class="ncf-field">
+                <label for="qz-concern">What is your primary concern? <span>*</span></label>
+                <select id="qz-concern" name="concern" required>
+                  <option value="">— Select one —</option>
+                  <option value="varicose">Bulging or twisted varicose veins</option>
+                  <option value="spider">Spider veins (small red/blue lines)</option>
+                  <option value="swelling">Leg swelling or heaviness</option>
+                  <option value="pain">Leg aching or cramping</option>
+                  <option value="skin">Skin discoloration near ankles</option>
+                  <option value="unsure">Not sure — I need an assessment</option>
+                </select>
+              </div>
+              <div class="ncf-field">
+                <label for="qz-duration">How long have you had symptoms? <span>*</span></label>
+                <select id="qz-duration" name="duration" required>
+                  <option value="">— Select one —</option>
+                  <option value="under6mo">Less than 6 months</option>
+                  <option value="6to12mo">6 – 12 months</option>
+                  <option value="1to3yr">1 – 3 years</option>
+                  <option value="over3yr">More than 3 years</option>
+                </select>
+              </div>
+              <div class="ncf-field">
+                <label for="qz-treated">Have you been treated for vein issues before?</label>
+                <select id="qz-treated" name="treated">
+                  <option value="">— Select one —</option>
+                  <option value="no">No, this is my first time seeking treatment</option>
+                  <option value="yes">Yes, I have had prior treatment</option>
+                </select>
+              </div>
+              <div class="ncf-row ncf-row--2">
+                <div class="ncf-field">
+                  <label for="qz-fname">First Name <span>*</span></label>
+                  <input type="text" id="qz-fname" name="firstName" placeholder="Jane" required autocomplete="given-name" />
+                </div>
+                <div class="ncf-field">
+                  <label for="qz-lname">Last Name <span>*</span></label>
+                  <input type="text" id="qz-lname" name="lastName" placeholder="Smith" required autocomplete="family-name" />
+                </div>
+              </div>
+              <div class="ncf-field">
+                <label for="qz-phone">Phone Number <span>*</span></label>
+                <input type="tel" id="qz-phone" name="phone" placeholder="(212) 555-0100" required autocomplete="tel" />
+              </div>
+              <div class="ncf-field">
+                <label for="qz-email">Email Address <span>*</span></label>
+                <input type="email" id="qz-email" name="email" placeholder="jane@example.com" required autocomplete="email" />
+              </div>
+              <p class="ncf-consent">By submitting you agree to our <a href="privacy-policy.html" target="_blank">Privacy Policy</a> and <a href="hipaa-notice.html" target="_blank">HIPAA Notice</a>. We never sell your information.</p>
+              <button type="submit" class="btn-primary ncf-submit">
+                <i class="fas fa-paper-plane"></i> Submit My Assessment
+              </button>
+              <div class="ncf-success" id="qz-success" style="display:none;">
+                <i class="fas fa-check-circle"></i>
+                <strong>Thank you!</strong> A care coordinator will call or text you within one business hour with your personalized results.
+              </div>
+              <div class="ncf-error" id="qz-error" style="display:none;">
+                <i class="fas fa-exclamation-circle"></i>
+                Please fill in all required fields.
+              </div>
+            </form>
+            <script>
+              document.getElementById('vein-quiz-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                var f = e.target;
+                var ok = f.firstName.value.trim() && f.lastName.value.trim() && f.phone.value.trim() && f.email.value.trim() && f.concern.value && f.duration.value;
+                document.getElementById('qz-error').style.display = ok ? 'none' : 'flex';
+                if (!ok) return;
+                f.style.display = 'none';
+                document.getElementById('qz-success').style.display = 'flex';
+                setTimeout(function(){ window.location.href = 'thank-you.html'; }, 2000);
+              });
+            </script>
           </div>
 
           <!-- Sidebar -->
@@ -406,7 +477,7 @@
     <div class="container">
       <img src="images/stem-regen-logo.png" alt="Stem Regen Medical" style="height:110px;object-fit:contain;margin-bottom:16px;" />
       <p style="font-size:0.88rem;margin-bottom:8px;color:#555;">7 West 45th Street, Floor 9 · New York, NY 10036</p>
-      <p style="font-size:0.88rem;margin-bottom:16px;color:#555;"><a href="tel:8777440446" style="color:#1a2560;text-decoration:none;">877-744-0446</a> · <a href="mailto:&#105;&#110;&#102;&#111;&#64;&#115;&#116;&#101;&#109;&#114;&#101;&#103;&#101;&#110;&#109;&#101;&#100;&#105;&#99;&#97;&#108;&#46;&#99;&#111;&#109;" style="color:#1a2560;text-decoration:none;">&#105;&#110;&#102;&#111;&#64;&#115;&#116;&#101;&#109;&#114;&#101;&#103;&#101;&#110;&#109;&#101;&#100;&#105;&#99;&#97;&#108;&#46;&#99;&#111;&#109;</a></p>
+      <p style="font-size:0.88rem;margin-bottom:16px;color:#555;"><a href="tel:8777440446" style="color:#1a2560;text-decoration:none;">877-744-0446</a> · <a href="mailto:info@stemregenvein.com" style="color:#1a2560;text-decoration:none;">info@stemregenvein.com</a></p>
       <p style="font-size:0.8rem;">
         <a href="index.html" style="color:#555;margin:0 8px;text-decoration:none;">Home</a>
         <a href="services/varicose-vein-treatment.html" style="color:#555;margin:0 8px;text-decoration:none;">Varicose Veins</a>
@@ -414,6 +485,11 @@
         <a href="team-page.html" style="color:#555;margin:0 8px;text-decoration:none;">Our Team</a>
         <a href="blog.html" style="color:#555;margin:0 8px;text-decoration:none;">Blog</a>
         <a href="index.html#schedule" style="color:#555;margin:0 8px;text-decoration:none;">Contact</a>
+      </p>
+      <p style="font-size:0.8rem;margin-top:12px;">
+        <a href="privacy-policy.html" style="color:#555;margin:0 8px;text-decoration:none;">Privacy Policy</a>
+        <a href="terms.html" style="color:#555;margin:0 8px;text-decoration:none;">Terms &amp; Conditions</a>
+        <a href="hipaa-notice.html" style="color:#555;margin:0 8px;text-decoration:none;">HIPAA Notice</a>
       </p>
       <p style="font-size:0.76rem;margin-top:16px;color:#999;">&copy; 2026 Stem Regen Medical | Midtown, NY &middot; Brooklyn, NY &middot; New Jersey. All rights reserved.</p>
     </div>
