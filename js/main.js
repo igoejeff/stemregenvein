@@ -1,5 +1,5 @@
 /* ================================================================
-   ATLANTA MEDICAL CLINIC — MAIN JAVASCRIPT
+   STEM REGEN MEDICAL — MAIN JAVASCRIPT
    Interactivity, animations, form handling, scroll effects
    ================================================================ */
 
@@ -454,12 +454,11 @@ function showVideoModal() {
           poster="images/video-poster.jpg"
           style="width:100%;height:100%;display:block;background:#000;"
         >
-          <source src="https://www.genspark.ai/api/files/s/U2MEeXrY" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
       <div class="vmodal-video-footer">
-        <span><i class="fas fa-circle-play"></i> Atlanta Medical Clinic — Vein Treatment</span>
+        <span><i class="fas fa-circle-play"></i> Stem Regen Medical — Vein Treatment</span>
         <a href="#schedule" class="btn-primary btn-sm vmodal-cta" onclick="document.getElementById('video-modal').remove()">
           <i class="fas fa-calendar-check"></i> Book Free Consultation
         </a>

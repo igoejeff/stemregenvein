@@ -3,7 +3,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
           http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
@@ -11,172 +10,174 @@
        CORE PAGES
   ════════════════════════════════════════════ -->
   <url>
-    <loc>https://www.stemregenmedical.com/</loc>
-    <lastmod>2026-03-02</lastmod>
+    <loc>https://www.stemregenvein.com/</loc>
+    <lastmod>2026-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://www.stemregenmedical.com/images/hero-bg.jpg</image:loc>
+      <image:loc>https://www.stemregenvein.com/images/hero-bg.jpg</image:loc>
       <image:title>Stem Regen Medical – Vein Treatment Specialists New York NY</image:title>
       <image:caption>Board-certified varicose vein and spider vein specialists serving New York, NY</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://www.stemregenmedical.com/images/stem-regen-logo.png</image:loc>
+      <image:loc>https://www.stemregenvein.com/images/stem-regen-logo.png</image:loc>
       <image:title>Stem Regen Medical Logo</image:title>
     </image:image>
   </url>
 
   <url>
-    <loc>https://www.stemregenmedical.com/blog.html</loc>
-    <lastmod>2026-03-02</lastmod>
+    <loc>https://www.stemregenvein.com/blog.html</loc>
+    <lastmod>2026-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://www.stemregenmedical.com/images/blog/blog-diabetes.jpg</image:loc>
-      <image:title>Diabetes Prevention &amp; Management – Stem Regen Medical Blog</image:title>
+      <image:loc>https://www.stemregenvein.com/images/blog/blog-spider-veins.jpg</image:loc>
+      <image:title>Vein Health Blog – Stem Regen Medical New York</image:title>
     </image:image>
   </url>
 
   <url>
-    <loc>https://www.stemregenmedical.com/testimonials.html</loc>
-    <lastmod>2026-03-16</lastmod>
+    <loc>https://www.stemregenvein.com/testimonials.html</loc>
+    <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.stemregenmedical.com/team-page.html</loc>
-    <lastmod>2026-03-02</lastmod>
+    <loc>https://www.stemregenvein.com/team-page.html</loc>
+    <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.stemregenvein.com/quiz.html</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.stemregenvein.com/thank-you.html</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.stemregenvein.com/privacy-policy.html</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://www.stemregenvein.com/terms.html</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://www.stemregenvein.com/accessibility.html</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
   </url>
 
   <!-- ═══════════════════════════════════════════
        SERVICE PAGES
   ════════════════════════════════════════════ -->
   <url>
-    <loc>https://www.stemregenmedical.com/services/varicose-vein-treatment.html</loc>
-    <lastmod>2026-03-02</lastmod>
+    <loc>https://www.stemregenvein.com/services/varicose-vein-treatment.html</loc>
+    <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.stemregenmedical.com/services/spider-vein-treatment.html</loc>
-    <lastmod>2026-03-02</lastmod>
+    <loc>https://www.stemregenvein.com/services/spider-vein-treatment.html</loc>
+    <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.stemregenmedical.com/services/venclose-rfa.html</loc>
-    <lastmod>2026-03-02</lastmod>
+    <loc>https://www.stemregenvein.com/services/venclose-rfa.html</loc>
+    <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://www.stemregenmedical.com/services/varithena.html</loc>
-    <lastmod>2026-03-02</lastmod>
+    <loc>https://www.stemregenvein.com/services/varithena.html</loc>
+    <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://www.stemregenmedical.com/services/sclerotherapy.html</loc>
-    <lastmod>2026-03-02</lastmod>
+    <loc>https://www.stemregenvein.com/services/sclerotherapy.html</loc>
+    <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <!-- ═══════════════════════════════════════════
-       BLOG POST PAGES (via URL parameter)
+       VEIN BLOG ARTICLES
   ════════════════════════════════════════════ -->
   <url>
-    <loc>https://www.stemregenmedical.com/blog.html?post=diabetes</loc>
+    <loc>https://www.stemregenvein.com/blog.html?post=varicose-veins</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.stemregenvein.com/images/blog/blog-spider-veins.jpg</image:loc>
+      <image:title>What Are Varicose Veins and When Should You See a Doctor?</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stemregenvein.com/blog.html?post=venclose-rfa</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.stemregenvein.com/images/blog/blog-venclose.jpg</image:loc>
+      <image:title>VENCLOSE RFA: The Minimally Invasive Varicose Vein Solution</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stemregenvein.com/blog.html?post=chronic-venous-insufficiency</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.stemregenvein.com/images/blog/blog-circulation.jpg</image:loc>
+      <image:title>Chronic Venous Insufficiency: Symptoms, Causes and Treatment</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stemregenvein.com/blog.html?post=sclerotherapy-guide</loc>
     <lastmod>2026-02-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://www.stemregenmedical.com/images/blog/blog-diabetes.jpg</image:loc>
-      <image:title>Complete Resource on Diabetes Prevention, Symptoms &amp; Management</image:title>
+      <image:loc>https://www.stemregenvein.com/images/blog/blog-knee-risks.jpg</image:loc>
+      <image:title>Complete Guide to Sclerotherapy for Spider and Varicose Veins</image:title>
     </image:image>
   </url>
 
   <url>
-    <loc>https://www.stemregenmedical.com/blog.html?post=knee-pain</loc>
-    <lastmod>2026-01-15</lastmod>
+    <loc>https://www.stemregenvein.com/blog.html?post=spider-veins</loc>
+    <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://www.stemregenmedical.com/images/blog/blog-knee-pain.jpg</image:loc>
-      <image:title>Comprehensive Guide to Knee Pain</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.stemregenmedical.com/blog.html?post=circulation</loc>
-    <lastmod>2025-12-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.stemregenmedical.com/images/blog/blog-circulation.jpg</image:loc>
-      <image:title>The Connection Between Poor Circulation and Chronic Pain</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.stemregenmedical.com/blog.html?post=neuropathy</loc>
-    <lastmod>2025-11-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.stemregenmedical.com/images/blog/blog-neuropathy.jpg</image:loc>
-      <image:title>Do You Have Neuropathy in New York? Signs and Treatments</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.stemregenmedical.com/blog.html?post=knee-balance</loc>
-    <lastmod>2025-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-    <image:image>
-      <image:loc>https://www.stemregenmedical.com/images/blog/blog-knee-risks.jpg</image:loc>
-      <image:title>How Knee Pain Can Throw Off Your Balance and Increase Fall Risk</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.stemregenmedical.com/blog.html?post=spider-veins</loc>
-    <lastmod>2025-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.stemregenmedical.com/images/blog/blog-spider-veins.jpg</image:loc>
+      <image:loc>https://www.stemregenvein.com/images/blog/blog-spider-veins.jpg</image:loc>
       <image:title>Spider Vein Removal in New York – What Treatment Is Right for You?</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.stemregenmedical.com/blog.html?post=knee-nonsurgical</loc>
-    <lastmod>2025-09-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-    <image:image>
-      <image:loc>https://www.stemregenmedical.com/images/blog/blog-knee-nonsurgical.jpg</image:loc>
-      <image:title>Best Non-Surgical Knee Pain Treatments in New York</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.stemregenmedical.com/blog.html?post=venclose-rfa</loc>
-    <lastmod>2025-05-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-    <image:image>
-      <image:loc>https://www.stemregenmedical.com/images/blog/blog-venclose-rfa.jpg</image:loc>
-      <image:title>How VENCLOSE RFA Can Improve Your Leg Health</image:title>
     </image:image>
   </url>
 
